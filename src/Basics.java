@@ -37,6 +37,10 @@ public class Basics {
 
         System.out.println(testBoolean);
 
-        
+
+    }
+
+    public static void ourAlgorithm() {
+
     }
 }
