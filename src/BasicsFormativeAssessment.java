@@ -59,4 +59,15 @@ public class BasicsFormativeAssessment {
         // - Otherwise, it will print "Nothing for me to do.
 
     }
+
+
+    public static void arraysOfFun() {
+        /*
+        Here's a couple of arrays for you to play with.
+         */
+        int[] anIntegerArray = {5, 7, 8, 3, 6, 3};
+        String[] aStringArray = {"Winner", "Winner", "Chicken dinner"};
+
+
+    }
 }
