@@ -68,6 +68,12 @@ public class BasicsFormativeAssessment {
         int[] anIntegerArray = {5, 7, 8, 3, 6, 3};
         String[] aStringArray = {"Winner", "Winner", "Chicken dinner"};
 
+        //TODO (6) -- Use the System.out.println() to display the 3rd element in anIntegerArray
+
+        //TODO (7) -- Use the .length method to determine the number of elements in aStringArray and store it in a variable called size
+
+        //TODO (8) -- Challenge: Use a for loop to cycle through all the elements of aStringArray and print each element to the screen.
+        //HINT: The output should be "Winner Winner Chicken Dinner"
 
     }
 }
