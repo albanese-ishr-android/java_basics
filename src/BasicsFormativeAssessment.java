@@ -6,6 +6,7 @@ public class BasicsFormativeAssessment {
      */
     public static void main(String[] args) {
         usingVariables();
+        goingLoopy();
 
     }
     /*
@@ -30,7 +31,15 @@ public class BasicsFormativeAssessment {
         //The output should be 2, 4, 6, 8 ... 50
 
 
-        //TODO (4) - Fix the while loop
-        
+        //TODO (4) - Fix the while loop. This while loop will run forever. Fix it so that it stops.
+        //HINT: The loop is supposed to countdown from 100.
+        int x = 100;
+
+        while (x < 100) {
+            System.out.println(x);
+        }
+
     }
+
+
 }
