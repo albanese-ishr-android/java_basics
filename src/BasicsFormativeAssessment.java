@@ -7,6 +7,7 @@ public class BasicsFormativeAssessment {
     public static void main(String[] args) {
         usingVariables();
         goingLoopy();
+        logicalComparisons();
 
     }
     /*
@@ -42,4 +43,20 @@ public class BasicsFormativeAssessment {
     }
 
 
+    public static void logicalComparisons() {
+        /*
+        In this exercise, you will use if, then, and elif statements to control the flow of the program.
+         */
+
+        int a = 100;
+        int b = 232;
+        int c = 27;
+
+        //TODO (5) -- Write a program using if and elif statements that does the following tasks:
+        // - It prints "a is bigger than b" if a is larger than b
+        // - It prints "b is larger than a" if b is larger than a.
+        // - It prints "b is larger than a and c is pretty small" if b is larger than a AND c is less than 10
+        // - Otherwise, it will print "Nothing for me to do.
+
+    }
 }
