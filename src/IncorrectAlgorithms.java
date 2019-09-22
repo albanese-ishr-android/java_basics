@@ -1,6 +1,7 @@
 public class IncorrectAlgorithms {
     public static void main(String[] args) {
         commonFactor();
+        commonElements();
     }
 
 
@@ -12,13 +13,36 @@ public class IncorrectAlgorithms {
         int numberTwo = 12;
 
         System.out.println("The common factors of: " + numberOne + " and " + numberTwo + " are: "); //The error is not here.
-        //HINT the error is in the next three lines.
+        /*
+
+         */
         for (int count = 1; count <= numberTwo; count = count + 1) {
             if ((numberOne % count == 0) || (numberTwo % count == 0)) {
                 System.out.println(count);
             }
         }
 
+    }
 
+
+    /*
+    The following method is supposed to find the common elements of two arrays. There is a logic error. Find it and correct it.
+     */
+    public static void commonElements() {
+        String[] arrayOne = {"aa", "11", "34", "ff", "mm"}; //The numbers in these arrays are considered strings because they are in quotes.
+        String[] arrayTwo = {"ff", "hh", "mn", "33", "34"};
+
+        System.out.println("The following elements are in both arrays: ");
+
+        for (int i = 0; i < arrayOne.length; i = i + 1) { //HINT: i is the counter for each of the items in arrayOne
+
+            for (int j = 0; j < arrayTwo.length; j = j + 1) { //HINT: j is the counter for each of the items in arrayTwo
+                if (arrayOne[i] == arrayTwo[j]) {
+                    System.out.println(arrayTwo[i]);
+                }
+            }
+
+
+        }
     }
 }
