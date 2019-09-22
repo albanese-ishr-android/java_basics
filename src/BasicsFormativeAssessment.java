@@ -8,6 +8,7 @@ public class BasicsFormativeAssessment {
         usingVariables();
         goingLoopy();
         logicalComparisons();
+        arraysOfFun();
 
     }
     /*
