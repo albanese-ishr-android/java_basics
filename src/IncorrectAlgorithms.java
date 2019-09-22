@@ -7,6 +7,7 @@ public class IncorrectAlgorithms {
 
     /*
     The following method is supposed to output the common factors of two numbers. There is an error in the logic. You need to find the error and correct it.
+    TODO: Find the error and fix it.
      */
     public static void commonFactor() {
         int numberOne = 14;
@@ -27,6 +28,7 @@ public class IncorrectAlgorithms {
 
     /*
     The following method is supposed to find the common elements of two arrays. There is a logic error. Find it and correct it.
+    TODO: Find the error and fix it.
      */
     public static void commonElements() {
         String[] arrayOne = {"aa", "11", "34", "ff", "mm"}; //The numbers in these arrays are considered strings because they are in quotes.
