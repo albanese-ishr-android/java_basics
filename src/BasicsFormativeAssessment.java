@@ -72,7 +72,9 @@ public class BasicsFormativeAssessment {
 
         //TODO (7) -- Use the .length method to determine the number of elements in aStringArray and store it in a variable called size
 
-        //TODO (8) -- Challenge: Use a for loop to cycle through all the elements of aStringArray and print each element to the screen.
+        //TODO (8) -- Print the size of the array with System.out.println()
+
+        //TODO (9) -- Challenge: Use a for loop to cycle through all the elements of aStringArray and print each element to the screen.
         //HINT: The output should be "Winner Winner Chicken Dinner"
 
     }
