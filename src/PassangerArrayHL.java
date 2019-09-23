@@ -11,9 +11,17 @@ public class PassangerArrayHL {
         int[] passengers = new int[210];
         generatePassengerData(passengers);
         int day = 0;
-        int startingDay = 0;
+        int currentPassengerArrayIndex = 0;
 
-        
+        while (currentPassengerArrayIndex < passengers.length) {
+            int currentWeek = currentPassengerArrayIndex / 7;
+            int currentDay = currentPassengerArrayIndex % 7;
+
+            twoDimensionalArray[currentWeek][currentDay] = passengers[currentPassengerArrayIndex];
+            currentPassengerArrayIndex = currentPassengerArrayIndex + 1;
+
+            System.out.println("Week: " + currentWeek + "\tDay: " + currentDay + "\tPassengers: " + twoDimensionalArray[currentWeek][currentDay]);
+        }
 
 
     }
