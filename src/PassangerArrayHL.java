@@ -2,7 +2,6 @@ import java.util.Random;
 
 public class PassangerArrayHL {
     public static void main(String[] args) {
-
         passengerData();
     }
 
@@ -12,21 +11,10 @@ public class PassangerArrayHL {
         int[] passengers = new int[210];
         generatePassengerData(passengers);
         int day = 0;
-        for (int i = 0; i < 30; i = i + 1) {//Outer loop for the weeks.
+        int startingDay = 0;
 
-            for (int j = 0; j < passengers.length; j = j + 7) {//Inner loop for each weekday in passengers
+        
 
-                if (j < 6) {
-                    day = j;
-                } else {
-                    day = j % 7;
-                }
-
-                twoDimensionalArray[i][day] = passengers[j];
-            }
-
-
-        }
 
     }
 
