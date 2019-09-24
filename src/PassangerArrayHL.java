@@ -4,6 +4,7 @@ public class PassangerArrayHL {
 
     static int[][] twoDimensionalArray = new int[30][7];
     static int[] passengers = new int[210];
+    static double[] fees = {2.70, 1.80};
 
     public static void main(String[] args) {
         generatePassengerData(passengers);
@@ -56,7 +57,23 @@ public class PassangerArrayHL {
         return "The highest average passenger day is: " + convert(maximumDay) + " with value: " + maximumAverage;
     }
 
+    public static double salesCalculate(int startWeek, int startDay, int endWeek, int endDay) {
+        double totalSales = 0;
 
+        for (int week = startWeek; week <= endDay; week++) {
+            for (int day = startDay; day <= endDay; day++) {
+
+                if (day >= 5) { //If the day is a Saturday or Sunday
+                    double currentDaySales = twoDimensionalArray[day][week] * fees[1];
+                    totalSales = totalSales + currentDaySales;
+                } else {
+                    double currentDaySales = twoDimensionalArray[day][week] * fees[0];
+                }
+            }
+        }
+
+        return totalSales;
+    }
 
     /*
     This method loads some random generated data into the passenger array.
