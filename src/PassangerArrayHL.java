@@ -2,14 +2,17 @@ import java.util.Random;
 
 public class PassangerArrayHL {
 
+    static int[][] twoDimensionalArray = new int[30][7];
+    static int[] passengers = new int[210];
+    
     public static void main(String[] args) {
         passengerData();
     }
 
 
     public static void passengerData() {
-        int[][] twoDimensionalArray = new int[30][7];
-        int[] passengers = new int[210];
+
+
         generatePassengerData(passengers);
         int currentPassengerArrayIndex = 0;
 
