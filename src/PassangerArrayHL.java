@@ -80,17 +80,24 @@ public class PassangerArrayHL {
             //The first nested loop is for the start week amd start day.
             for (int day = 0; day <= 6; day++) {
                 if (day < 5) {
-                    dailySail = twoDimensionalArray[startWeek][day] * fees[0];
+                    dailySail = twoDimensionalArray[week][day] * fees[0];
                     totalSales = totalSales + dailySail;
                 } else {
-                    dailySail = twoDimensionalArray[startWeek][day] * fees[1];
+                    dailySail = twoDimensionalArray[week][day] * fees[1];
                     totalSales = totalSales + dailySail;
                 }
             }
 
-            //
-
-
+            //THe last loop is for the last week.
+            for (int day = 0; day <= endDay; day++) {
+                if (day < 5) {
+                    dailySail = twoDimensionalArray[endWeek][day] * fees[0];
+                    totalSales = totalSales + dailySail;
+                } else {
+                    dailySail = twoDimensionalArray[endWeek][day] * fees[1];
+                    totalSales = totalSales + dailySail;
+                }
+            }
         }
 
 
