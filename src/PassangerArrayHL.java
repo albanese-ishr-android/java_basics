@@ -1,6 +1,7 @@
 import java.util.Random;
 
 public class PassangerArrayHL {
+
     public static void main(String[] args) {
         passengerData();
     }
@@ -10,22 +11,25 @@ public class PassangerArrayHL {
         int[][] twoDimensionalArray = new int[30][7];
         int[] passengers = new int[210];
         generatePassengerData(passengers);
-        int day = 0;
         int currentPassengerArrayIndex = 0;
 
+        //This block of code sorts the data into a two dimensional array : 30 weeks as rows and 7 columns as days.
         while (currentPassengerArrayIndex < passengers.length) {
+
             int currentWeek = currentPassengerArrayIndex / 7;
             int currentDay = currentPassengerArrayIndex % 7;
 
             twoDimensionalArray[currentWeek][currentDay] = passengers[currentPassengerArrayIndex];
             currentPassengerArrayIndex = currentPassengerArrayIndex + 1;
-
             System.out.println("Week: " + currentWeek + "\tDay: " + currentDay + "\tPassengers: " + twoDimensionalArray[currentWeek][currentDay]);
         }
 
 
     }
 
+    /*
+    This method loads some random generated data into the passenger array.
+     */
     public static void generatePassengerData(int[] array) {
         for (int i = 0; i < array.length; i++) {
 
