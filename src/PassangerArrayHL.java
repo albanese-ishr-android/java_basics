@@ -60,8 +60,39 @@ public class PassangerArrayHL {
 
     public static double salesCalculate(int startWeek, int startDay, int endWeek, int endDay) {
         double totalSales = 0;
+        double dailySail = 0;
 
         //TODO: Must work on this code. We'll need three nested loops to solve this one.
+
+        //The first nested loop is for the start week amd start day.
+        for (int day = startDay; day <= 6; day++) {
+            if (day < 5) {
+                dailySail = twoDimensionalArray[startWeek][day] * fees[0];
+                totalSales = totalSales + dailySail;
+            } else {
+                dailySail = twoDimensionalArray[startWeek][day] * fees[1];
+                totalSales = totalSales + dailySail;
+            }
+        }
+
+        //The next loop is for the weeks between the start and end week;
+        for (int week = startWeek + 1; week < endWeek; week++) {
+            //The first nested loop is for the start week amd start day.
+            for (int day = 0; day <= 6; day++) {
+                if (day < 5) {
+                    dailySail = twoDimensionalArray[startWeek][day] * fees[0];
+                    totalSales = totalSales + dailySail;
+                } else {
+                    dailySail = twoDimensionalArray[startWeek][day] * fees[1];
+                    totalSales = totalSales + dailySail;
+                }
+            }
+
+            //
+
+
+        }
+
 
         return totalSales;
     }
