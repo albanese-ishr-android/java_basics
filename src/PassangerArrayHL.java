@@ -7,7 +7,9 @@ public class PassangerArrayHL {
 
     public static void main(String[] args) {
         generatePassengerData(passengers);
-        sortPassengerTwoDimensionalArray();
+        sortPassengerTwoDimensionalArray(); //Solution to 15a
+        int myTotal = total(5); // Solution to 15b
+        System.out.println(myTotal);
     }
 
 
@@ -24,6 +26,18 @@ public class PassangerArrayHL {
             currentPassengerArrayIndex = currentPassengerArrayIndex + 1;
             System.out.println("Week: " + currentWeek + "\tDay: " + currentDay + "\tPassengers: " + twoDimensionalArray[currentWeek][currentDay]);
         }
+
+    }
+
+
+    public static int total(int columnNumber) {
+        int sum = 0;
+        if (columnNumber <= 6) {
+            for (int week = 0; week < twoDimensionalArray.length; week++) {
+                sum = sum + twoDimensionalArray[week][columnNumber];
+            }
+        }
+        return sum;
 
     }
 
