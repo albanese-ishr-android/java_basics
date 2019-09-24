@@ -10,6 +10,7 @@ public class PassangerArrayHL {
         sortPassengerTwoDimensionalArray(); //Solution to 15a
         int myTotal = total(5); // Solution to 15b
         System.out.println(myTotal);
+        System.out.println(findHighestAverage()); //Solution to 15c
     }
 
 
@@ -40,6 +41,22 @@ public class PassangerArrayHL {
         return sum;
 
     }
+
+    public static String findHighestAverage() {
+        float maximumAverage = 0;
+        int maximumDay = 0;
+
+        for (int day = 0; day < 6; day++) {
+            float currentAverage = total(day) / twoDimensionalArray.length;
+            if (currentAverage > maximumAverage) {
+                maximumAverage = currentAverage;
+                maximumDay = day;
+            }
+        }
+        return "The highest average passenger day is: " + convert(maximumDay) + " with value: " + maximumAverage;
+    }
+
+
 
     /*
     This method loads some random generated data into the passenger array.
