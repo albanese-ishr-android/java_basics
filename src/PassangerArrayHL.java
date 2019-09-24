@@ -12,6 +12,7 @@ public class PassangerArrayHL {
         int myTotal = total(5); // Solution to 15b
         System.out.println(myTotal);
         System.out.println(findHighestAverage()); //Solution to 15c
+        System.out.println(salesCalculate(2, 3, 4, 5));
     }
 
 
@@ -60,18 +61,7 @@ public class PassangerArrayHL {
     public static double salesCalculate(int startWeek, int startDay, int endWeek, int endDay) {
         double totalSales = 0;
 
-        for (int week = startWeek; week <= endDay; week++) {
-            for (int day = startDay; day <= endDay; day++) {
-
-                if (day >= 5) { //If the day is a Saturday or Sunday
-                    double currentDaySales = twoDimensionalArray[day][week] * fees[1];
-                    totalSales = totalSales + currentDaySales;
-                } else {
-                    double currentDaySales = twoDimensionalArray[day][week] * fees[0];
-                }
-            }
-        }
-
+        
         return totalSales;
     }
 
