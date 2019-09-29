@@ -60,18 +60,18 @@ public class PassangerArrayHL {
 
     public static double salesCalculate(int startWeek, int startDay, int endWeek, int endDay) {
         double totalSales = 0;
-        double dailySail = 0;
+        double dailySale = 0;
 
         //TODO: Must work on this code. We'll need three nested loops to solve this one.
 
         //The first nested loop is for the start week amd start day.
         for (int day = startDay; day <= 6; day++) {
             if (day < 5) {
-                dailySail = twoDimensionalArray[startWeek][day] * fees[0];
-                totalSales = totalSales + dailySail;
+                dailySale = twoDimensionalArray[startWeek][day] * fees[0];
+                totalSales = totalSales + dailySale;
             } else {
-                dailySail = twoDimensionalArray[startWeek][day] * fees[1];
-                totalSales = totalSales + dailySail;
+                dailySale = twoDimensionalArray[startWeek][day] * fees[1];
+                totalSales = totalSales + dailySale;
             }
         }
 
@@ -80,22 +80,22 @@ public class PassangerArrayHL {
             //The first nested loop is for the start week amd start day.
             for (int day = 0; day <= 6; day++) {
                 if (day < 5) {
-                    dailySail = twoDimensionalArray[week][day] * fees[0];
-                    totalSales = totalSales + dailySail;
+                    dailySale = twoDimensionalArray[week][day] * fees[0];
+                    totalSales = totalSales + dailySale;
                 } else {
-                    dailySail = twoDimensionalArray[week][day] * fees[1];
-                    totalSales = totalSales + dailySail;
+                    dailySale = twoDimensionalArray[week][day] * fees[1];
+                    totalSales = totalSales + dailySale;
                 }
             }
 
             //THe last loop is for the last week.
             for (int day = 0; day <= endDay; day++) {
                 if (day < 5) {
-                    dailySail = twoDimensionalArray[endWeek][day] * fees[0];
-                    totalSales = totalSales + dailySail;
+                    dailySale = twoDimensionalArray[endWeek][day] * fees[0];
+                    totalSales = totalSales + dailySale;
                 } else {
-                    dailySail = twoDimensionalArray[endWeek][day] * fees[1];
-                    totalSales = totalSales + dailySail;
+                    dailySale = twoDimensionalArray[endWeek][day] * fees[1];
+                    totalSales = totalSales + dailySale;
                 }
             }
         }
