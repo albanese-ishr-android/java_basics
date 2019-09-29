@@ -18,7 +18,7 @@ public class IncorrectAlgorithms {
 
          */
         for (int count = 1; count <= numberTwo; count = count + 1) {
-            if ((numberOne % count == 0) || (numberTwo % count == 0)) {
+            if ((numberOne % count == 0) && (numberTwo % count == 0)) { //Both numbers need to be divisible. So use the && for AND
                 System.out.println(count);
             }
         }
@@ -39,8 +39,8 @@ public class IncorrectAlgorithms {
         for (int i = 0; i < arrayOne.length; i = i + 1) { //HINT: i is the counter for each of the items in arrayOne
 
             for (int j = 0; j < arrayTwo.length; j = j + 1) { //HINT: j is the counter for each of the items in arrayTwo
-                if (arrayOne[i] == arrayTwo[j]) {
-                    System.out.println(arrayTwo[i]);
+                if (arrayOne[i] == arrayTwo[j]) { //Change the index to j because j is the index keeping track of the position of arrayTwo.
+                    System.out.println(arrayTwo[j]);
                 }
             }
 
